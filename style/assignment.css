@@ -29,3 +29,116 @@
 .black {
   color: black;
 }
+
+/* banner */
+.banner {
+  /* background-color: aqua; */
+  width: 1198px;
+  height: 461px;
+  align-items: end;
+  gap: 30px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0px 20px;
+  justify-content: space-between;
+  h2 {
+    font-size: 45px;
+    font-weight: bold;
+  }
+  .text-color {
+    color: rgba(233, 90, 8, 1);
+  }
+}
+
+/* plant section and card section */
+.plants-section {
+  width: 1140px;
+  height: 1186px;
+  background-color: aqua;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 100px;
+}
+.our-plants {
+  width: 80%;
+  max-width: auto;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  h2 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .our {
+    color: rgba(233, 90, 8, 1);
+  }
+}
+/* card section */
+.card-cointener {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  width: 270px;
+  border: 2px solid rebeccapurple;
+  padding: 0;
+  text-align: center;
+  img {
+    max-width: auto;
+  }
+  h3 {
+    font-size: medium;
+  }
+  h2 {
+    font-weight: bold;
+  }
+  button {
+    background-color: rgba(233, 90, 8, 1);
+    font-size: 16px;
+    font-weight: 500;
+    width: 270px;
+    height: 50px;
+    border: none;
+  }
+}
+
+/* Responsiv medeye quary */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-links,
+  .banner {
+    width: auto;
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    margin-top: 100px;
+    padding: none;
+    align-items: center;
+  }
+  .banner-img {
+    width: auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  /* card */
+  .plants-section {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .card-cointener {
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+
+    margin: auto;
+    max-width: 100%;
+    gap: 10px;
+  }
+}
