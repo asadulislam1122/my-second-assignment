@@ -106,6 +106,95 @@
   }
 }
 
+/* join section */
+.join-section {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(/Images/news-letter-bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe-section {
+  text-align: center;
+  color: white;
+}
+
+.subscribe-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 15px;
+  font-size: 1rem;
+  width: 400px;
+  border: none;
+  outline: none;
+}
+
+.subscribe-form button {
+  padding: 15px 30px;
+  background-color: #f45b0c;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background-color: #d94e08;
+}
+
+/* fotter section */
+.footer-section {
+  display: flex;
+  margin-top: 100px;
+  gap: 30px;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: 348px;
+  /* background-color: aqua; */
+  /* max-width: auto; */
+}
+.home1,
+.feature1 {
+  display: grid;
+  gap: 40px;
+}
+.footer-item,
+.feature-item {
+  list-style: none;
+}
+.footer-list,
+.feature-list {
+  text-decoration: none;
+  color: grey;
+}
+.footer-icon {
+  width: 300px;
+  height: 100%;
+  /* background-color: #d94e08; */
+  margin-top: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  text-align: center;
+  gap: 20px;
+}
+
 /* Responsiv medeye quary */
 @media screen and (max-width: 576px) {
   .navbar,
@@ -140,5 +229,46 @@
     margin: auto;
     max-width: 100%;
     gap: 10px;
+  }
+  /* join section */
+  .join-section {
+    margin-top: 900px;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  .subscribe-section h1 {
+    font-size: 2rem;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe-form input[type="email"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .subscribe-form button {
+    width: 100%;
+  }
+
+  /* footer responsiv */
+  .footer-section {
+    margin-top: 50px;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: start;
+    gap: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .footer-icon {
+    align-items: start;
+    flex-direction: row;
+    padding: 0;
+    max-width: 180px;
   }
 }
