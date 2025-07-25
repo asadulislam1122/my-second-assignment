@@ -54,7 +54,7 @@
 .plants-section {
   width: 1140px;
   height: 1186px;
-  background-color: aqua;
+  /* background-color: aqua; */
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -82,12 +82,13 @@
 }
 
 .card {
-  width: 270px;
-  border: 2px solid rebeccapurple;
-  padding: 0;
+  height: auto;
+  width: 240px;
+  /* border: 2px solid rebeccapurple; */
+  padding: 0px;
   text-align: center;
   img {
-    max-width: auto;
+    max-width: 240px;
   }
   h3 {
     font-size: medium;
@@ -99,7 +100,7 @@
     background-color: rgba(233, 90, 8, 1);
     font-size: 16px;
     font-weight: 500;
-    width: 270px;
+    width: 240px;
     height: 50px;
     border: none;
   }
@@ -136,7 +137,6 @@
   .card-cointener {
     flex-direction: column;
     grid-template-columns: repeat(2, 1fr);
-
     margin: auto;
     max-width: 100%;
     gap: 10px;
